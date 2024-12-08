@@ -2,23 +2,35 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+    height: 7%;
 }
 .menu {
     display: flex;
-    gap: 1.5rem;
+    gap: 3rem;
+    border-radius: 2rem;
+    border: 0.05rem solid white;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background: rgb(43, 43, 43);
 }
 .main {
     display: flex;
     flex-direction: column;
     padding: 1rem;
     margin-top: 2rem;
+    height: 86%;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
 }
 .section {
     display: flex;
@@ -40,12 +52,74 @@
 a {
     color: white;
 }
-.abouttitle {
+.sectiontitle {
     margin-top: 2rem;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-}
-.aboutmeword {
     font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+}
+.explanation {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.footer {
+    display: flex;
+    gap: 0.40rem;
+    height: 7%;
+    text-align: center;
+    font-size: 0.80rem;
+    align-items: center;
+    justify-content: center;
+}
+#angularlogo {
+    width: 5rem;
+}
+#githublogo {
+    width: 2rem;
+}
+.about {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.abouttext {
+    text-align: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+.anon {
+    text-decoration: none;
+}
+.projects {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+.projectvalues {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.projecttitlesection {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.projecttitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(19, 143, 197);
+}
+.projectstatus {
+    font-size: 0.75rem;
+    font-style: italic;
+}
+.projectexplain {
+    text-align: justify;
 }
